@@ -62,3 +62,9 @@ for i = 1:numel(onsets)
         'FaceAlpha', 0.2, 'EdgeColor', 'none');
 end
 
+plot(time, Vout, 'b');
+ylim(yl);
+xlabel('Time (s)'); ylabel('Voltage (V)');
+title('EMG Data showing location of peaks and duration of contractions');
+hold on;
+plot(locs, pks, 'rv', 'MarkerFaceColor', 'r');
